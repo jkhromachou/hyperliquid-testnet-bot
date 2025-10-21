@@ -1,0 +1,21 @@
+api:
+  url: "https://api.hyperliquid-testnet.xyz"
+  account_address: "YOUR_ACCOUNT_ADDRESS_HERE"
+  secret_key: "YOUR_SECRET_KEY_HERE"
+
+settings:
+  poll_interval: 60
+  log_file: "bot.log"
+
+webhooks:
+  discord: "https://discord.com/api/webhooks/YOUR_DISCORD_WEBHOOK_URL_HERE"
+
+positions:
+  - asset: "BTC"
+    side: "long"
+    entry_price: 50000
+    rule: "macd_cross_below_minus40"
+  - asset: "ETH"
+    side: "short"
+    entry_price: 3000
+    rule: "rsi_above_70"
